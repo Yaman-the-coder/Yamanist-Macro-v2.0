@@ -950,6 +950,7 @@ print(f"HWND: {hwnd}")
             if not self.macro_active:
                 self._start_macro()
 
+
     def _on_global_key_release(self, key):
         if self.waiting_for_key:
             return
