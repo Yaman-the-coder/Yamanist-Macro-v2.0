@@ -950,7 +950,6 @@ print(f"HWND: {hwnd}")
             if not self.macro_active:
                 self._start_macro()
 
-
     def _on_global_key_release(self, key):
         if self.waiting_for_key:
             return
@@ -1259,6 +1258,7 @@ print(f"HWND: {hwnd}")
             if self.vel_y > 0: 
                 self.vel_y = -abs(self.vel_y) * self.BOUNCE_DAMPING
 
+        # slow down a bit over time
         self.vel_x *= self.FRICTION
         self.vel_y *= self.FRICTION
 
