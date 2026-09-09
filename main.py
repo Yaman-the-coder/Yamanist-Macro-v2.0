@@ -357,6 +357,7 @@ print(f"HWND: {hwnd}")
 
     def _show_slider_area(self):
         self.cps_display.pack(side="right")
+        # Show the slider with some padding so it does not look crowded
         self.cps_slider.pack(pady=(12, 4), after=self.cps_top_row)
         self.range_row.pack(fill="x", after=self.cps_slider)
 
