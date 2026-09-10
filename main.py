@@ -1259,7 +1259,7 @@ print(f"HWND: {hwnd}")
             if self.vel_y > 0: 
                 self.vel_y = -abs(self.vel_y) * self.BOUNCE_DAMPING
 
-        # slow down a bit over time
+# just slowing it down a bit so it stops
         self.vel_x *= self.FRICTION
         self.vel_y *= self.FRICTION
 
